@@ -1,12 +1,12 @@
 FactoryGirl.define do
   factory :invitation do
-    user nil
-    team nil
+    user
+    team
   end
   factory :user do
     email "MyString"
     invited false
-    team nil
+    team
   end
   factory :team do
     name "MyString"
