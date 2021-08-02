@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.3.1"
+ruby "2.3.0"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
@@ -32,7 +32,7 @@ end
 group :development, :test do
   gem "awesome_print"
   gem "bullet"
-  gem "bundler-audit", ">= 0.5.0", require: false
+  gem "bundler-audit", "> 0.7.0.1", require: false
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "pry-byebug"

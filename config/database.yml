@@ -6,10 +6,15 @@ development: &default
   pool: <%= Integer(ENV.fetch("DB_POOL", 5)) %>
   reaping_frequency: <%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
   timeout: 5000
+  host: localhost
+  username: mvsabino
+  password: mvsabino
 
 test:
   <<: *default
   database: tdd_example_test
+  username: mvsabino
+  password: mvsabino
 
 production: &deploy
   encoding: utf8
