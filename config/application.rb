@@ -1,5 +1,6 @@
 require_relative 'boot'
 require 'rails/all'
+ActiveSupport::Deprecation.silenced = true
 Bundler.require(*Rails.groups)
 module TddExample
   class Application < Rails::Application
