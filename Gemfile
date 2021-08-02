@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.2"
+ruby "3.0.1"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
@@ -11,16 +11,16 @@ gem "normalize-rails", "~> 3.0.0"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
-gem "rails", "~> 5.0.0"
+gem "rails"
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
 gem "simple_form"
-gem "skylight"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "suspenders"
 gem "title"
 gem "uglifier"
+gem "webrick"
 
 group :development do
   gem "listen"
@@ -62,5 +62,4 @@ group :staging, :production do
 end
 
 gem 'high_voltage'
-gem 'bourbon', '5.0.0.beta.6'
 gem 'neat', '~> 1.8.0'
